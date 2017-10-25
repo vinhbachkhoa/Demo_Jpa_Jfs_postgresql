@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="demo@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="demo">
+      <ObjectId>22472</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12441</ObjectId>
+    </database>
+    <database id="4" parent="1" name="sars_db">
+      <ObjectId>20531</ObjectId>
+    </database>
+    <database id="5" parent="1" name="business_traceability">
+      <ObjectId>20532</ObjectId>
+    </database>
+    <schema id="6" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-10-25.14:05:17.136</IntrospectionTimestamp>
+      <IntrospectionStateNumber>12581</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="information_schema">
+      <ObjectId>12153</ObjectId>
+    </schema>
+    <table id="12" parent="6" name="employee">
+      <ObjectId>22478</ObjectId>
+      <StateNumber>12581</StateNumber>
+    </table>
+    <table id="13" parent="6" name="student">
+      <ObjectId>22473</ObjectId>
+      <StateNumber>12562</StateNumber>
+    </table>
+    <column id="14" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>12581</StateNumber>
+    </column>
+    <column id="15" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>12581</StateNumber>
+    </column>
+    <index id="16" parent="12" name="employee_pkey">
+      <ObjectId>22481</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="17" parent="12" name="employee_pkey">
+      <ObjectId>22482</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>employee_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="18" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>12562</StateNumber>
+    </column>
+    <column id="19" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>12562</StateNumber>
+    </column>
+    <column id="20" parent="13" name="diachi">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>12562</StateNumber>
+    </column>
+    <index id="21" parent="13" name="student_pkey">
+      <ObjectId>22476</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="22" parent="13" name="student_pkey">
+      <ObjectId>22477</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
